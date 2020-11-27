@@ -1,17 +1,23 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './view/home/home.component';
+import { EditFacturasComponent } from './view/edit-facturas/edit-facturas.component';
+import { ListaFacturasComponent } from './view/lista-facturas/lista-facturas.component';
 
 const routes: Routes = [
   {
-    path:'home',
-    component:HomeComponent
+    path: 'lista-facturas',
+    component:ListaFacturasComponent
   },
-  { path: '**', component: HomeComponent },
+  {
+    path: 'factura/:accion',
+    component: EditFacturasComponent
+  },
+  { path: '**', component:ListaFacturasComponent},
   ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+
+exports: [RouterModule]
 })
 export class AppRoutingModule { }

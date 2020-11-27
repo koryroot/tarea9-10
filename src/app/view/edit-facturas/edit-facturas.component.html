@@ -1,0 +1,75 @@
+<div class="m-3">
+  <button type="button" class="btn btn-lg btn-primary" routerLink="/">Atrás</button>
+</div>
+<div class="col-8 offset-2 mt-5">
+  <h3>{{label + " Factura"|uppercase}}</h3>
+  <form class="container" [formGroup]="form">
+    <div class="form-group">
+      <label for="exampleInputEmail1">nombre</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">RNC</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Fecha</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        placeholder="Enter email">
+    </div>
+    <div class="form-group col-12">
+      <label for="exampleFormControlTextarea1">Descrpcion</label>
+      <!-- <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+       -->
+      <div class="col-8">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">Producto</label>
+          </div>
+          <select class="custom-select">
+            <option selected>Choose...</option>
+            <option value="1">Empanadas de Queso</option>
+            <option value="2">Empanadas de Queso y Jamón</option>
+            <option value="3">Empanadas de Res</option>
+            <option value="3">Empanadas de habichuela</option>
+          </select>
+        </div>
+      </div>
+      <input class="ml-5" type="number" placeholder="cantidad">
+      <button class="btn btn-primary m-2">add</button>
+
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Detalle para los artículos</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Calcular SubTotal.
+      </label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Itbis.
+      </label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+
+
+  </form>
+
+
+</div>
+
+
+
+
+
